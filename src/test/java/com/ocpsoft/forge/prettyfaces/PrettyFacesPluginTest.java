@@ -32,7 +32,7 @@ import java.util.regex.Matcher;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
 
-import org.jboss.arquillian.api.Deployment;
+import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.forge.project.Project;
 import org.jboss.forge.project.facets.WebResourceFacet;
 import org.jboss.forge.project.services.FacetFactory;
@@ -44,6 +44,9 @@ import org.jboss.forge.test.AbstractShellTest;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
 
+import com.ocpsoft.forge.prettyfaces.MockScaffoldProvider;
+import com.ocpsoft.forge.prettyfaces.PrettyFacesFacet;
+import com.ocpsoft.forge.prettyfaces.PrettyFacesPlugin;
 import com.ocpsoft.pretty.faces.config.PrettyConfig;
 import com.ocpsoft.pretty.faces.config.mapping.UrlMapping;
 
